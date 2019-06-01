@@ -1,0 +1,25 @@
+Errors:
+
+	45119-0 has header typo (reported)
+
+	45001 plain text is blank (reported)
+
+	41859 plain text is missing text (seems fine online??)
+
+No Headers/Footers:
+
+	30360
+
+	17748
+
+	15579
+
+	12479
+
+No Footers:
+
+	25274
+
+Copyrighted:
+
+	17139
