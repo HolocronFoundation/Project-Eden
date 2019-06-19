@@ -4,6 +4,6 @@
 # You should consider running this regularly using crontab or another program.
 
 # Vars
-local_storage_dir="/media/troper/Troper_Primary-D/Media/Books/Project Gutenberg"
+local_storage_dir="/home/Media/Books/Project Gutenberg"
 
-rsync -av --del ftp.ibiblio.org::gutenberg "$local_storage_dir"
+rsync -av -L -K --del ftp.ibiblio.org::gutenberg "$local_storage_dir"
