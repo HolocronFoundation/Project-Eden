@@ -55,6 +55,15 @@ This document outlines current thoughts, notes, and todos related to the Gutenbe
 - Identify what files should be kept for Project-Eden
   - Simplest complete format should be kept
     - E.g. .txt for books, .mp3 for music, .??? for books with images
+    - Current thoughts - use the HTML version
+      - This would preserve images and other formatting
+      - What does this entail?
+        - Two approaches:
+          - Zip the HTML plus referenced files
+          - Convert the HTML to be more IPFS compatible
+            - This would strip hard links to the images and other non-html files and would instead insert an IPFS reference to them
+            - Good test case for IPFS html
   - TODO: List all file types kept in project Gutenberg
 - Strip headers, compress, and prep as an ipfs document, to be distributed seperately from the books themselves to save space
-- Check if metadata was pulled with latest symlink update
+
+Current format thoughts: Modify metadata files to include IPFS hash of zipped item - link metadata in C.N., and add metadata parsing HTML to C.N. as default processor
